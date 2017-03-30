@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\..\guid.c" />
+    <ClCompile Include="..\..\mutex.c" />
+    <ClCompile Include="..\..\objptr.c" />
+    <ClCompile Include="..\..\spin.c" />
+    <ClCompile Include="..\..\tec.c" />
+    <ClCompile Include="..\..\thread.c" />
+    <ClCompile Include="..\..\external\memio\malloc.c">
+      <Filter>external</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\tid.c" />
+    <ClCompile Include="..\..\condition-linuxthreads.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\guid.h" />
+    <ClInclude Include="..\..\mutex.h" />
+    <ClInclude Include="..\..\objptr.h" />
+    <ClInclude Include="..\..\rwmutex.h" />
+    <ClInclude Include="..\..\rwspin.h" />
+    <ClInclude Include="..\..\semaphore.h" />
+    <ClInclude Include="..\..\setup.h" />
+    <ClInclude Include="..\..\spin.h" />
+    <ClInclude Include="..\..\tec.h" />
+    <ClInclude Include="..\..\thread.h" />
+    <ClInclude Include="..\..\atomic.h" />
+    <ClInclude Include="..\..\attribute.h" />
+    <ClInclude Include="..\..\barrier.h" />
+    <ClInclude Include="..\..\c4.h" />
+    <ClInclude Include="..\..\condition.h" />
+    <ClInclude Include="..\..\context.h" />
+    <ClInclude Include="..\..\error.h" />
+    <ClInclude Include="..\..\except.h" />
+    <ClInclude Include="..\..\external\memio\malloc.h">
+      <Filter>external</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\c99\stdbool.h">
+      <Filter>external</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\c99\stdint.h">
+      <Filter>external</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\tid.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="external">
+      <UniqueIdentifier>{9db2f8a0-85d2-47a3-b0d2-342d870f8a80}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\getcontext.inc" />
+    <None Include="..\..\getcontext-386.asm" />
+  </ItemGroup>
+  <ItemGroup>
+    <MASM Include="..\..\getcontext-wow64.asm" />
+  </ItemGroup>
+</Project>
